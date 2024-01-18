@@ -1,0 +1,80 @@
+:root {
+    --primary-background-color: #1C1A1F;
+    --secondary-background-color: #2C3833;
+    --secondary-background-color-alt: #C1DDD1;
+    --font-color: #F7FCF4;
+    --menu-font-color: #797979;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 9rem;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background-color: var(--primary-background-color);
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ******** Menu ******* */
+
+#menu-container {
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+
+}
+
+.logo {
+    margin-right: 0.75rem;
+}
+
+.menu p {
+    color: var(--secondary-background-color-alt);
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    color: var(--font-color);
+}
+
+.options ul {
+    padding: 0 1.125rem;
+}
+
+.options ul li:nth-child(2) {
+    margin: 0 4.5rem;
+}
+
+.login ul>li:first-child {
+    margin-right: 3.25rem;
+}
+
+/* ******* utilidades ******* */
+
+.btn {
+    color: var(--font-color);
+    padding: 0.5rem 1.5rem;
+    border: var(--secondary-background-color-alt) 1px solid;
+    border-radius: 1rem;
+}
