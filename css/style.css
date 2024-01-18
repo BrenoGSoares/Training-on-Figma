@@ -6,8 +6,6 @@
     --menu-font-color: #797979;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +25,20 @@ li,
 a {
     text-decoration: none;
     list-style: none;
+}
+
+/* ******* utilidades ******* */
+
+.btn {
+    color: var(--font-color);
+    padding: 0.5rem 1.5rem;
+    border: var(--secondary-background-color-alt) 1px solid;
+    border-radius: 1rem;
+}
+
+.arrow {
+    position: absolute;
+    margin: 2rem 0 2rem 1rem;
 }
 
 /* ******** Menu ******* */
@@ -60,6 +72,12 @@ a {
 
 .options ul {
     padding: 0 1.125rem;
+    color: var(--menu-font-color);
+}
+
+.options ul li:hover {
+    color: var(--font-color);
+    transition: .5s;
 }
 
 .options ul li:nth-child(2) {
@@ -70,11 +88,56 @@ a {
     margin-right: 3.25rem;
 }
 
-/* ******* utilidades ******* */
+/* ******* content ******** */
 
-.btn {
+#content {
+    display: flex;
+    max-width: 700px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6.5rem;
+
+}
+
+#content-img {
+    position: absolute;
+    top: 55px;
+    right: 144px;
+}
+
+.title h1 {
     color: var(--font-color);
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.title h1:nth-child(3) {
+    font-weight: 400;
+}
+
+.title h1:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+.title h1 span {
     padding: 0.5rem 1.5rem;
-    border: var(--secondary-background-color-alt) 1px solid;
-    border-radius: 1rem;
+    border: var(--font-color) 2px solid;
+    border-radius: 5rem;
+}
+
+.subtitle {
+    display: flex;
+    margin-top: 6rem;
+    color: var(--menu-font-color);
+}
+
+.subtitle p {
+    font-size: 1.25rem;
+    margin-right: 6rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+}
+
+.subtitle img {
+    padding-right: 4rem;
 }
