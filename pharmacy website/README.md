@@ -8,3 +8,6 @@ Este projeto tem como foco a criação de uma Landing Page para uma farmácia, d
 # :hammer: Funcionalidades do projeto
 - `TODO`: Responsividade 
 - `TODO`: Animações com JS 
+
+
+Créditos Design: Capi Product (https://www.capiproduct.com/)
