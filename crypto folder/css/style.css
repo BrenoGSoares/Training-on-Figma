@@ -132,6 +132,7 @@ body {
 #home {
     display: flex;
     flex-direction: column;
+    position: relative;
     margin-top: 3.81rem;
 }
 
@@ -140,6 +141,10 @@ body {
 .home-content {
     display: flex;
     flex-direction: row;
+}
+
+.home-info {
+    padding-right: 40rem;
 }
 
 .home-info>h1 {
@@ -194,6 +199,11 @@ body {
 
 /* ********* home-section-img ********** */
 
+.home-img {
+    position: absolute;
+    right: 0;
+}
+
 #home-img-img {
     right: 7.5rem;
 }
@@ -211,7 +221,7 @@ body {
 }
 
 .home-footer {
-    margin: 7rem -7.5rem 5rem -7.5rem;
+    margin: 10rem -7.5rem 5rem -7.5rem;
     overflow: hidden;
 }
 
