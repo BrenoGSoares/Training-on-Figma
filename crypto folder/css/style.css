@@ -259,7 +259,8 @@ body {
 
 /* ********* benefits ********** */
 
-#benefits {
+#benefits,
+#started {
     margin: 0rem -7.5rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 1.75rem;
@@ -475,4 +476,97 @@ body {
     text-transform: uppercase;
     margin-top: 1rem;
     text-align: center;
+}
+
+/* started */
+
+.started-content {
+    display: flex;
+    position: relative;
+    margin: 0 7.5rem;
+    max-width: 80rem;
+    gap: 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.started-content .wallet {
+    width: 26rem;
+    height: 28.75rem;
+    border-radius: 1.25rem;
+    flex-shrink: 0;
+    background: url(../css/assets/wallet.jpg) -110px -10px / 220% no-repeat;
+}
+
+.started-content>img {
+    position: absolute;
+    bottom: -2rem;
+    right: -12rem;
+}
+
+.started-text h1 {
+    font-family: var(--font1);
+    font-size: 3.125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.started-text p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-family: var(--font2);
+    font-weight: 400;
+}
+
+.started-text a {
+    width: 11rem;
+    font-family: var(--font2);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    background-color: var(--primary-text-color);
+    color: var(--text-white);
+    display: flex;
+    padding: 1rem 1.5rem 1rem 1.75rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 7rem;
+}
+
+.started-text span {
+    transform: rotate(45deg);
+}
+
+.started-text span img {
+    display: flex;
+    width: 2rem;
+}
+
+/* footer */
+
+#footer-bar {
+    margin: 48px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-bar ul {
+    display: flex;
+    gap: 24px
+}
+
+#footer-bar h2 {
+    font-family: var(--font1);
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#footer-bar p {
+    color: var(--text-comment);
+    text-align: right;
+    font-family: var(--font2);
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
