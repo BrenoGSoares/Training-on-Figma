@@ -43,6 +43,61 @@ body {
 
 /* ********* nav *********** */
 
+/* mobile */
+#nav-bar-mobile {
+    display: none;
+    position: relative;
+    justify-content: space-between;
+}
+
+.mobile-content {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-background-color-alt);
+    border-radius: 1rem;
+    z-index: 1;
+    right: 0;
+    top: 1rem;
+}
+
+
+.mobile-content>*:first-child {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.itens-menu {
+    margin: 0;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+
+.itens-menu-login {
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.itens-menu-login li {
+    font-family: var(--font1);
+    background-color: var(--primary-text-color);
+    color: var(--secondary-background-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.itens-menu-login li:nth-child(1) {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color-alt);
+}
+
+
 #nav-bar {
     display: flex;
     padding: 1.25rem 0;
@@ -111,6 +166,10 @@ body {
     width: 3rem;
     height: 3rem;
     background-color: var(--primary-text-color);
+}
+
+.login {
+    padding: 0;
 }
 
 .option-menu {
@@ -670,15 +729,20 @@ body {
 }
 
 @media (max-width: 425px) {
+    body {
+        margin: 0 1rem;
+    }
 
     /* nav bar */
     .menu,
-    .login {
+    .login,
+    #nav-bar,
+    .mobile-content {
         display: none;
     }
 
-    body {
-        margin: 0 1rem;
+    #nav-bar-mobile {
+        display: flex;
     }
 
     /* home-section-text */
