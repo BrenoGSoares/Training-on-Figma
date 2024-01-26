@@ -146,9 +146,6 @@
 
 
 @media (max-width: 425px) {
-    body {
-        margin: 0 1rem;
-    }
 
     /* nav bar */
     .mobile-content,

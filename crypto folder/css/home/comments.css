@@ -175,12 +175,19 @@
 
 @media (max-width: 425px) {
 
+
     /* comments */
+    .comments-content>h1 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
     .user-comments {
         flex-direction: column;
         gap: 2rem;
         align-items: center;
     }
+
 
     /* historic comments */
 
@@ -198,12 +205,14 @@
 
     }
 
-}
-
-@media (max-width: 320px) {
     .historic-data h1 {
         font-size: 3rem;
     }
+
+}
+
+@media (max-width: 320px) {
+
 
     /* comments */
 

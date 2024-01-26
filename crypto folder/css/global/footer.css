@@ -43,4 +43,8 @@
         padding: 0;
     }
 
+    #footer-bar .container p {
+        text-align: center;
+    }
+
 }
