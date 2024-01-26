@@ -1,0 +1,147 @@
+label {
+    display: none;
+}
+
+
+.modal-container {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100;
+}
+
+
+.modal-login {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    max-width: fit-content;
+    background-color: var(--secondary-background-color-alt);
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    border-radius: 4rem;
+}
+
+
+.modal-login>img {
+    height: 60rem;
+    width: auto;
+    border-radius: 4rem 0 0 4rem;
+}
+
+.login-date {
+    padding: 5rem;
+    font-family: var(--font1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-date h1 {
+    margin-top: -.5rem;
+    font-size: 3.75rem;
+}
+
+.login-date ul {
+    display: flex;
+    gap: 3rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.login-date>ul li {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.login-date>ul li:nth-child(2) {
+    border-radius: 1.5rem;
+    color: var(--secondary-background-color-alt);
+    background-color: var(--primary-text-color);
+    transition: .5s;
+}
+
+.login-date>ul li:nth-child(2):hover,
+.login-option>input:hover {
+    background-color: var(--text-black);
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    padding-top: 1rem;
+}
+
+form>img {
+    position: absolute;
+    right: 0;
+    top: 7.75rem;
+}
+
+#email,
+#senha {
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+    border: none;
+    border-bottom: var(--text-black) 3px solid;
+    border-radius: 1px;
+    background-color: var(--secondary-background-color-alt);
+}
+
+.login-option {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-option>input {
+    font-family: var(--font1);
+    font-size: 2rem;
+    color: var(--secondary-background-color-alt);
+    padding: 1rem 6rem;
+    border: none;
+    transition: .5s;
+    border-radius: 1rem;
+    background-color: var(--primary-text-color);
+}
+
+.login-option p {
+    font-size: 2rem;
+}
+
+.login-option ul li img {
+    width: 120%;
+    height: auto;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+.mostrar .modal-login {
+    animation: modal .3s;
+}

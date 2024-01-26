@@ -21,7 +21,7 @@
 
 .home-info>h1 {
     font-family: var(--font1);
-    font-size: 3.75rem;
+    font-size: 6rem;
     font-weight: 500;
 }
 
@@ -189,7 +189,6 @@
         display: flex;
         justify-content: center;
     }
-
 
     .home-footer {
         margin: 3rem -1rem 2.5rem -1rem;

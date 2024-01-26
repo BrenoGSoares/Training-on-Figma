@@ -97,11 +97,13 @@
 }
 
 .login li:nth-child(1) {
+    cursor: pointer;
     padding: 0.5rem 1.25rem;
     color: var(--primary-text-color)
 }
 
 .login li:nth-child(2) {
+    cursor: pointer;
     background-color: var(--primary-text-color);
     color: var(--secondary-background-color);
     display: flex;
