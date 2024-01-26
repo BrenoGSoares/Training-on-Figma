@@ -1,0 +1,141 @@
+/* benefits  */
+
+#benefits {
+    /* margin: 0rem -7.5rem; */
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 1.75rem;
+    padding: 5rem 0;
+}
+
+
+.benefits-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.column-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+
+.benefits-content>h1 {
+    color: var(--primary-text-color);
+    font-family: var(--font1);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3.75rem;
+    text-align: center;
+}
+
+.card {
+    max-width: 25rem;
+    height: 19.75rem;
+    padding: 2.5rem 3.75rem 1.25rem 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-background-color);
+    border-radius: 1.5rem;
+}
+
+.card>h1 {
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card p {
+    font-family: var(--font2);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: var(--secondary-text-color);
+}
+
+.card-1>img {
+    max-width: 8.5rem;
+    height: 8.5rem;
+}
+
+.card-4>img {
+    max-width: 14rem;
+    height: 9rem;
+    border-radius: 1.25rem;
+}
+
+.card-5 {
+    display: flex;
+    justify-content: start;
+    align-self: stretch;
+    height: auto;
+    padding: 2.483rem 4.097rem;
+}
+
+.card-5>img {
+    max-width: 25rem;
+    height: 25rem;
+}
+
+.card-5>p {
+    margin-bottom: 5.5rem;
+}
+
+@media (max-width: 1440px) {
+    .benefits-card {
+        gap: 1rem
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* benefits */
+
+    #benefits {
+        margin: 0 -4rem;
+        padding: 1rem 0;
+    }
+
+    .benefits-content {
+        align-items: center;
+    }
+
+    .card {
+        padding: 2rem 2rem 4rem 2rem;
+    }
+
+    .card-5>img {
+        max-width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    /* benefits */
+    #benefits {
+        margin: 0 -1rem;
+        padding: 1rem 0;
+    }
+
+    .benefits-content {
+        margin: 0 1rem;
+        justify-content: center;
+    }
+
+    .benefits-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

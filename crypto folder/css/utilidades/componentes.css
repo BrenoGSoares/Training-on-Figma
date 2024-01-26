@@ -1,0 +1,20 @@
+.container {
+    margin: 0 7.5rem;
+    align-items: center;
+}
+
+.text-alt {
+    color: var(--text-color-detail);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin: 0 4rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        margin: 0 1rem;
+    }
+}
