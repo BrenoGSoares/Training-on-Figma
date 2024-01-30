@@ -82,7 +82,7 @@ form {
 form>img {
     position: absolute;
     right: 0;
-    top: 7.75rem;
+    top: 6.5rem;
 }
 
 #email,
@@ -90,8 +90,9 @@ form>img {
     font-family: var(--font2);
     font-weight: 600;
     font-size: 1.5rem;
-    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+    padding: 1.5rem 2.5rem 0.5rem 1.5rem;
     border: none;
+    outline: none;
     border-bottom: var(--text-black) 3px solid;
     border-radius: 1px;
     background-color: var(--secondary-background-color-alt);
